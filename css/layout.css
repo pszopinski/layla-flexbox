@@ -13,3 +13,14 @@ html {
 html {
   font: 16px/1.75 sans-serif;
 }
+
+/* Structure */
+.segment {
+  padding: 4rem 0;
+}
+
+.segment-content {
+  width: 80vw;
+  max-width: 1000px;
+  margin: auto;
+}
