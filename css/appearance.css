@@ -1,0 +1,96 @@
+/* General */
+html {
+  --background-color: white;
+  --foreground-color: #091110;
+  --accent-color: #c6d698;
+  --footer-color: #e75164;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+
+  scroll-behavior: smooth;
+  background-color: var(--footer-color);
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--foreground-color);
+}
+
+a {
+  color: inherit;
+}
+
+/* Structure */
+.segment.accent {
+  background-color: var(--accent-color);
+}
+
+footer.segment {
+  background-color: var(--footer-color);
+  color: var(--background-color);
+}
+
+.segment + .segment:not(.accent) {
+  border-top: 1px solid var(--shadow-color);
+}
+
+/* Header */
+.logo {
+  font-size: 2.5em;
+  white-space: nowrap;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  font-size: 1.2em;
+}
+
+nav li.current {
+  font-weight: bold;
+}
+
+nav button {
+  padding: 0;
+  border: none;
+  background: none;
+  font-size: 1.5em;
+}
+
+/* Mobile menu */
+#mobile-menu {
+  font-size: 1.5em;
+}
+
+/* Cards */
+.cards > * {
+  border: 1px solid var(--shadow-color);
+  box-shadow: 0.125rem 0.25rem 0.5rem var(--shadow-color);
+}
+
+.cards header {
+  text-align: center;
+  padding: var(--small-gap);
+  border-bottom: 1px solid var(--shadow-color);
+}
+
+.cards .icon {
+  font-size: 2em;
+}
+
+.cards h3 {
+  margin: 0;
+}
+
+.cards p {
+  margin: var(--small-gap);
+}
+
+/* Goodbye message */
+#goodbye-message {
+  font-size: 1.5em;
+  text-align: center;
+}
